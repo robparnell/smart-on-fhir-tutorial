@@ -70,7 +70,12 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           p.temperature = getQuantityValueAndUnit(temperature[0]);
           p.allergies = getQuantityValueAndUnit(allergies[0]);
-
+          allergies.forEach(function(allergy){
+            if {typeof(allergy.code) === "object") {
+              console.log(allergy.code.text);
+            }
+               })  
+               p.allergies = ""'
           ret.resolve(p);
         });
       } else {
